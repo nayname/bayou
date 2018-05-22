@@ -77,6 +77,7 @@ public class ApiSynthesisClient extends JsonMsgClientBase
      */
     public List<String> synthesise(String code, int maxProgramCount) throws IOException, SynthesisError
     {
+      System.err.println(code);
         return synthesizeHelp(code, maxProgramCount, null);
     }
 

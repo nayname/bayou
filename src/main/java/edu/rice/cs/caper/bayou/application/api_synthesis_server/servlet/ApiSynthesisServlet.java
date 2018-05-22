@@ -140,7 +140,7 @@ public class ApiSynthesisServlet extends SizeConstrainedPostBodyServlet implemen
     private void doPostHelp(HttpServletRequest req, HttpServletResponse resp, String requestBody) throws IOException
     {
         _logger.debug("entering");
-        _logger.info("api synthesis request");
+        _logger.info("api synthesis request"+requestBody);
 
         /*
          * Check inputs.
